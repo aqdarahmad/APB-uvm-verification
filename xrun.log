@@ -1,5 +1,5 @@
 xrun(64): 25.03-s006: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	25.03-s006: Started on Feb 20, 2026 at 02:23:26 EET
+TOOL:	xrun(64)	25.03-s006: Started on Feb 20, 2026 at 02:25:10 EET
 xrun
 	-uvm
 	-f filelist.f
@@ -15,63 +15,7 @@ xrun
 		tb/apb_env.sv
 		tb/apb_test.sv
 		tb/top.sv
-file: rtl/apb_slave.sv
-	module worklib.apb_slave:sv
-		errors: 0, warnings: 0
-file: tb/apb_if.sv
-	interface worklib.apb_if:sv
-		errors: 0, warnings: 0
-file: tb/apb_sequence.sv
-file: tb/top.sv
-	module worklib.top:sv
-		errors: 0, warnings: 0
-		Caching library 'worklib' ....... Done
-	Elaborating the design hierarchy:
-	Top level design units:
-		uvm_pkg
-		cdns_uvmapi
-		cdns_assert2uvm_pkg
-		cdns_uvm_pkg
-		$unit_0x09b3669e
-		top
-	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-		worklib.apb_slave:sv <0x79a6618b>
-			streams:   8, words:  2961
-		worklib.apb_if:sv <0x4109cd5f>
-			streams: 543, words: 554393
-		worklib.cdns_uvm_pkg:sv <0x3ff29f3e>
-			streams: 172, words: 242151
-		worklib.cdns_uvmapi:svp <0x5c9816bb>
-			streams:  27, words: 28330
-		worklib.cdns_assert2uvm_pkg:sv <0x74ddec67>
-			streams:   3, words:  1590
-		worklib.uvm_pkg:sv <0x61997f03>
-			streams: 4534, words: 6729971
-	Building instance specific data structures.
-	Loading native compiled code:     .................... Done
-	Design hierarchy summary:
-		                        Instances  Unique
-		Modules:                        2       2
-		Interfaces:                     1       1
-		Verilog packages:               4       4
-		Registers:                 13,809  10,168
-		Scalar wires:                   9       -
-		Vectored wires:                 4       -
-		Named events:                   4      12
-		Always blocks:                  3       3
-		Initial blocks:               283     155
-		Parallel blocks:               26      27
-		Cont. assignments:              1       1
-		Pseudo assignments:             9       -
-		Assertions:                     3       3
-		Compilation units:              1       1
-		SV Class declarations:        198     312
-		SV Class specializations:     381     381
-		Process Clocks:                 1       1
-	Writing initial simulation snapshot: worklib.top:sv
-Loading snapshot worklib.top:sv .................... Done
-SVSEED default: 1
-xcelium> source /usr/cadence/installs/XCELIUM2503/tools/xcelium/files/xmsimrc
-xcelium> source /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
-xcelium> run
+xrun: *W,WKWTLK: Waiting for a Exclusive lock on file '/home/Trainee23/apb/xcelium.d/run.lnx8664.25.03.d/.xmrun.lock'. pid:1909508.
+
+Additional info:
+TOOL:	xrun(64)	25.03-s006 (CL: 809911 ), orionvtech, Linux 4.18.0-553.16.1.el8_10.x86_64 #1 SMP Thu Aug 8 07:11:46 EDT 2024 x86_64
