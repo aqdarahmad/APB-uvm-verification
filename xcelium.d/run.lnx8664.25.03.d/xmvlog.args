@@ -1,0 +1,29 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.25.03.d
+-RUNMODE
+rtl/apb_slave.sv
+tb/apb_if.sv
+tb/apb_transaction.sv
+tb/apb_sequencer.sv
+tb/apb_driver.sv
+tb/apb_monitor.sv
+tb/apb_scoreboard.sv
+tb/apb_agent.sv
+tb/apb_env.sv
+tb/apb_test.sv
+tb/top.sv
+-CDSLIB
+./xcelium.d/run.lnx8664.25.03.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.25.03.d/hdlrun.var
+-no_analogsolver
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.25.03.d/xllibs
+-ALLOWUNBOUND
+-sv_ms
