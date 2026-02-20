@@ -5,6 +5,9 @@
 -XLMODE
 ./xcelium.d/run.lnx8664.25.03.d
 -RUNMODE
+-UVMNOSINGLESTEP
+-define
+UVM_PLI
 rtl/apb_slave.sv
 tb/apb_if.sv
 tb/apb_transaction.sv
@@ -20,6 +23,12 @@ tb/top.sv
 ./xcelium.d/run.lnx8664.25.03.d/cdsrun.lib
 -HDLVAR
 ./xcelium.d/run.lnx8664.25.03.d/hdlrun.var
+-I_INCDIR
+/usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/sv/src
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+-I_INCDIR
+/usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/additions/sv
 -no_analogsolver
 -MESSAGES
 -UPDATE
@@ -27,3 +36,4 @@ tb/top.sv
 ./xcelium.d/run.lnx8664.25.03.d/xllibs
 -ALLOWUNBOUND
 -sv_ms
+-ENABLEOIGW

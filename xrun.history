@@ -30,3 +30,13 @@ s14(20Feb2026:02:05:08):  xrun -uvm rtl/apb_slave.sv tb/apb_agent.sv tb/apb_driv
 s15(20Feb2026:02:07:48):  xrun -uvm rtl/apb_slave.sv tb/apb_agent.sv tb/apb_driver.sv tb/apb_env.sv tb/apb_if.sv tb/apb_monitor.sv tb/apb_scoreboard.sv tb/apb_sequencer.sv tb/apb_test.sv tb/apb_transaction.sv tb/top.sv 
 #e16(20Feb2026:02:07:58): source ./xcelium.d/env.d/env.history.20Feb2026_02_07_58
 s16(20Feb2026:02:07:58):  xrun -f filelist.f 
+#e17(20Feb2026:02:10:56): source ./xcelium.d/env.d/env.history.20Feb2026_02_10_56
+s17(20Feb2026:02:10:56):  xrun -uvm -f filelist.f 
+#e18(20Feb2026:02:11:59): source ./xcelium.d/env.d/env.history.20Feb2026_02_11_59
+s18(20Feb2026:02:11:59):  xrun -uvm -f filelist.f 
+#e19(20Feb2026:02:15:21): source ./xcelium.d/env.d/env.history.20Feb2026_02_15_21
+s19(20Feb2026:02:15:21):  xrun -uvm -f filelist.f 
+#e20(20Feb2026:02:17:40): source ./xcelium.d/env.d/env.history.20Feb2026_02_17_40
+s20(20Feb2026:02:17:40):  xrun -uvm -f filelist.f 
+#e21(20Feb2026:02:18:12): source ./xcelium.d/env.d/env.history.20Feb2026_02_18_12
+s21(20Feb2026:02:18:12):  xrun -uvm -f filelist.f 

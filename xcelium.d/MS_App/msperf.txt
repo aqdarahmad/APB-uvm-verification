@@ -16,3 +16,13 @@ DMSPFEB, option -no_analogsolver
 SVMSEB, .sv file
 DMSPFEB, option -no_analogsolver
 SVMSEB, .sv file
+DMSPFEB, option -no_analogsolver
+SVMSEB, .sv file
+DMSPFEB, option -no_analogsolver
+SVMSEB, .sv file
+DMSPFEB, option -no_analogsolver
+SVMSEB, .sv file
+DMSPFEB, option -no_analogsolver
+SVMSEB, .sv file
+DMSPFEB, option -no_analogsolver
+SVMSEB, .sv file

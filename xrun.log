@@ -1,6 +1,7 @@
 xrun(64): 25.03-s006: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	25.03-s006: Started on Feb 20, 2026 at 02:07:58 EET
+TOOL:	xrun(64)	25.03-s006: Started on Feb 20, 2026 at 02:18:12 EET
 xrun
+	-uvm
 	-f filelist.f
 		rtl/apb_slave.sv
 		tb/apb_if.sv
@@ -13,102 +14,20 @@ xrun
 		tb/apb_env.sv
 		tb/apb_test.sv
 		tb/top.sv
-file: rtl/apb_slave.sv
-	module worklib.apb_slave:sv
-		errors: 0, warnings: 0
-file: tb/apb_if.sv
-	interface worklib.apb_if:sv
-		errors: 0, warnings: 0
-file: tb/apb_transaction.sv
-`include "uvm_macros.svh"
-                        |
-xmvlog: *E,COFILX (tb/apb_transaction.sv,2|24): cannot open include file 'uvm_macros.svh'.
-class apb_transaction extends uvm_sequence_item;
-                                              |
-xmvlog: *E,SVNOTY (tb/apb_transaction.sv,3|46): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-    `uvm_object_utils(apb_transaction)
-                    |
-xmvlog: *E,NOTDIR (tb/apb_transaction.sv,9|20): `uvm_object_utils: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
-    `uvm_object_utils(apb_transaction)
-                     |
-xmvlog: *E,EXPENC (tb/apb_transaction.sv,9|21): Expecting the keyword 'endclass'.
-    function new(string name="apb_transaction");
-               |
-xmvlog: *E,NEWOIC (tb/apb_transaction.sv,11|15): The class constructor method 'new' is only allowed within a class declaration.
-        super.new(name);
-            |
-xmvlog: *E,CLSSPX (tb/apb_transaction.sv,12|12): 'super' can only be used within a class scope that derives from a base class.
-endclass
-       |
-xmvlog: *E,MPANDC (tb/apb_transaction.sv,15|7): expecting the keyword 'module', 'macromodule', 'primitive', 'connectmodule','connect', 'discipline' or 'nature' [A.1].
-file: tb/apb_sequencer.sv
-`include "uvm_macros.svh"
-                        |
-xmvlog: *E,COFILX (tb/apb_sequencer.sv,2|24): cannot open include file 'uvm_macros.svh'.
-    `uvm_component_utils(apb_sequencer)
-                       |
-xmvlog: *E,NOTDIR (tb/apb_sequencer.sv,4|23): `uvm_component_utils: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
-file: tb/apb_driver.sv
-`include "uvm_macros.svh"
-                        |
-xmvlog: *E,COFILX (tb/apb_driver.sv,2|24): cannot open include file 'uvm_macros.svh'.
-    `uvm_component_utils(apb_driver)
-                       |
-xmvlog: *E,NOTDIR (tb/apb_driver.sv,5|23): `uvm_component_utils: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
-            `uvm_fatal("NOVIF","interface not set")
-                     |
-xmvlog: *E,NOTDIR (tb/apb_driver.sv,15|21): `uvm_fatal: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
-file: tb/apb_monitor.sv
-`include "uvm_macros.svh"
-                        |
-xmvlog: *E,COFILX (tb/apb_monitor.sv,2|24): cannot open include file 'uvm_macros.svh'.
-    `uvm_component_utils(apb_monitor)
-                       |
-xmvlog: *E,NOTDIR (tb/apb_monitor.sv,5|23): `uvm_component_utils: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
-            `uvm_fatal("NOVIF","interface not set")
-                     |
-xmvlog: *E,NOTDIR (tb/apb_monitor.sv,16|21): `uvm_fatal: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
-file: tb/apb_scoreboard.sv
-`include "uvm_macros.svh"
-                        |
-xmvlog: *E,COFILX (tb/apb_scoreboard.sv,2|24): cannot open include file 'uvm_macros.svh'.
-    `uvm_component_utils(apb_scoreboard)
-                       |
-xmvlog: *E,NOTDIR (tb/apb_scoreboard.sv,5|23): `uvm_component_utils: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
-                `uvm_error("MISMATCH","Read data mismatch")
-                         |
-xmvlog: *E,NOTDIR (tb/apb_scoreboard.sv,20|25): `uvm_error: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
-file: tb/apb_agent.sv
-`include "uvm_macros.svh"
-                        |
-xmvlog: *E,COFILX (tb/apb_agent.sv,2|24): cannot open include file 'uvm_macros.svh'.
-    `uvm_component_utils(apb_agent)
-                       |
-xmvlog: *E,NOTDIR (tb/apb_agent.sv,5|23): `uvm_component_utils: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
-file: tb/apb_env.sv
-`include "uvm_macros.svh"
-                        |
-xmvlog: *E,COFILX (tb/apb_env.sv,2|24): cannot open include file 'uvm_macros.svh'.
-    `uvm_component_utils(apb_env)
-                       |
-xmvlog: *E,NOTDIR (tb/apb_env.sv,5|23): `uvm_component_utils: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
 file: tb/apb_test.sv
- `include "uvm_macros.svh"
-                         |
-xmvlog: *E,COFILX (tb/apb_test.sv,2|25): cannot open include file 'uvm_macros.svh'.
- `uvm_component_utils(apb_test) 
-                    |
-xmvlog: *E,NOTDIR (tb/apb_test.sv,4|20): `uvm_component_utils: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+    apb_sequence seq;
+               |
+xmvlog: *E,NOIPRT (tb/apb_test.sv,23|15): Unrecognized declaration 'apb_sequence' of unknown type, which could be because of an unsupported keyword, a spelling mistake, non-visible type, or missing instance port list '()' [SystemVerilog].
+    apb_sequence seq;
+               |
+xmvlog: *E,NOTINF (tb/apb_test.sv,23|15): Interfaces are not allowed within tasks [SystemVerilog].
+    phase.raise_objection(this);
+        |
+xmvlog: *E,EXPRPA (tb/apb_test.sv,24|8): expecting a right parenthesis (')') [A.2.6(IEEE)].
 file: tb/top.sv
-`include "uvm_macros.svh"
-                        |
-xmvlog: *E,COFILX (tb/top.sv,2|24): cannot open include file 'uvm_macros.svh'.
-    `include "uvm_macros.svh"
-                            |
-xmvlog: *E,COFILX (tb/top.sv,6|28): cannot open include file 'uvm_macros.svh'.
 	module worklib.top:sv
-		errors: 1, warnings: 0
+		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
-		errors: 25, warnings: 0
+		errors: 3, warnings: 0
 xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
-TOOL:	xrun(64)	25.03-s006: Exiting on Feb 20, 2026 at 02:07:58 EET  (total: 00:00:00)
+TOOL:	xrun(64)	25.03-s006: Exiting on Feb 20, 2026 at 02:18:12 EET  (total: 00:00:00)
