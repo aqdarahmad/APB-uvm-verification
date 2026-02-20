@@ -9,3 +9,4 @@
 1771545152 /home/Trainee23/apb/tb/apb_transaction.sv
 1771546242 /home/Trainee23/apb/tb/top.sv
 1771546636 /home/Trainee23/apb/tb/apb_test.sv
+1771547000 /home/Trainee23/apb/tb/apb_sequence.sv
